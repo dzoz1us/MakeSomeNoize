@@ -1,0 +1,429 @@
+/* стиль для окон */
+:root {
+    /* цветовые переменные */
+    --primary-red: #dc3545;
+    --dark-red: #b02a37;
+    --black: #000000;
+    --dark-gray: #1a1a1a;
+    --gray: #2d2d2d;
+    --light-gray: #404040;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* фоны */
+.bg-custom-dark {
+    background-color: var(--dark-gray) !important;
+}
+
+.bg-custom-black {
+    background-color: var(--black) !important;
+}
+
+/* текста */
+.text-custom-red {
+    color: var(--primary-red) !important;
+}
+
+/* границы */
+.border-custom-red {
+    border-color: var(--primary-red) !important;
+}
+
+/* кнопки */
+.btn-custom-red {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: white;
+}
+
+.btn-custom-red:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+    color: white;
+}
+
+/* логотип в навигации */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ссылки в навигации */
+.nav-link {
+    color: var(--white) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-red) !important;
+}
+
+/* Hero Section для contact.html и results.html */
+.hero-section {
+    background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+    height: 40vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-red);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section для makesomenoize.html */
+.hero-section-main {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    /*адаптивность*/
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title-main {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* контактные карточки */
+.contact-card {
+    background-color: var(--dark-gray);
+    border: 1px solid var(--light-gray);
+    transition: transform 0.3s, border-color 0.3s;
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-red);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+}
+
+/* карточки команды */
+.team-card {
+    background-color: var(--dark-gray);
+    border: 1px solid var(--light-gray);
+    transition: transform 0.3s, border-color 0.3s;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-red);
+}
+
+.player-role {
+    font-size: 0.8rem;
+    color: var(--primary-red);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.player-stats {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* карточки матчей */
+.match-card {
+    background-color: var(--gray);
+    border-left: 4px solid var(--primary-red);
+}
+
+.tournament-badge {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: var(--primary-red);
+}
+
+/* заголовки */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-red);
+}
+
+/* формы */
+.form-control {
+    background-color: var(--gray);
+    border: 1px solid var(--light-gray);
+    color: var(--white);
+}
+
+.form-control:focus {
+    background-color: var(--gray);
+    border-color: var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-label {
+    color: var(--white);
+}
+
+/* достижения */
+.achievement-card {
+    background-color: var(--gray);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 15px;
+}
+
+.stream-embed {
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+}
+
+/* футер */
+footer {
+    border-top: 2px solid var(--primary-red);
+}
+
+/* кнопки */
+.btn-hero {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.3);
+}
+
+/* скролл игроков */
+.players-scroll-container {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    margin: 0 -15px;
+    padding: 0 15px 20px;
+}
+
+.players-scroll {
+    display: flex;
+    gap: 20px;
+    min-width: min-content;
+}
+
+.player-card-wrapper {
+    flex: 0 0 300px;
+    padding: 10px 0;
+}
+
+/* стили скроллбара */
+.players-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.players-scroll-container::-webkit-scrollbar-track {
+    background: var(--dark-gray);
+    border-radius: 4px;
+}
+
+.players-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--primary-red);
+    border-radius: 4px;
+}
+
+.players-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-red);
+}
+
+.players-scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-red) var(--dark-gray);
+}
+
+/* белый цвет для описания игроков */
+.team-card .card-text {
+    color: var(--white) !important;
+}
+
+/* стили для страницы результатов */
+.btn-outline-custom-red {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.btn-outline-custom-red:hover {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: white;
+}
+
+.table-dark {
+    background-color: var(--dark-gray);
+    border-color: var(--light-gray);
+}
+
+.table-dark th,
+.table-dark td {
+    border-color: var(--light-gray);
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--gray);
+}
+
+.progress {
+    background-color: var(--gray);
+}
+
+.progress-bar {
+    background-color: var(--primary-red);
+}
+
+/* стили для карточек статистики */
+.card {
+    border: 1px solid var(--light-gray);
+}
+
+/* адаптивный дизайн */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-section-main{
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .hero-title-main {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .video-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .player-card-wrapper {
+        flex: 0 0 280px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section-main {
+        height: 80vh;
+    }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты - MakeSomeNoize</title>
+    <meta name="description" content="Результаты матчей киберспортивной команды MakeSomeNoize">
+    <link rel="icon" href="assets/MSN1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-custom-red" href="makesomenoize.html">MakeSomeNoize</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="makesomenoize.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="results.html">Результаты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title text-custom-red">Результаты</h1>
+                    <p class="lead">Статистика и результаты последних матчей команды</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Статистика команды</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card bg-custom-black border-custom-red p-4">
+                        <h4 class="text-white mb-4">Процент побед за последние 30 игр</h4>
+                        
+                        <!-- Progress Bars for Map Win Rates -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-white">Ancient</span>
+                                <span class="text-custom-red">73%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-custom-red" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-white">Mirage</span>
+                                <span class="text-custom-red">65%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-custom-red" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-white">Inferno</span>
+                                <span class="text-custom-red">58%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-custom-red" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-white">Nuke</span>
+                                <span class="text-custom-red">52%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-custom-red" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-white">Overpass</span>
+                                <span class="text-custom-red">48%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-custom-red" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card bg-custom-black border-custom-red p-4 h-100">
+                        <h4 class="text-white mb-4">Общая статистика</h4>
+                        <div class="row text-center h-100">
+                            <div class="col-6 mb-4 d-flex flex-column justify-content-center">
+                                <div class="text-custom-red display-6 fw-bold">67%</div>
+                                <div class="text-white">Общий винрейт</div>
+                            </div>
+                            <div class="col-6 mb-4 d-flex flex-column justify-content-center">
+                                <div class="text-custom-red display-6 fw-bold">18</div>
+                                <div class="text-white">Побед</div>
+                            </div>
+                            <div class="col-6 mb-4 d-flex flex-column justify-content-center">
+                                <div class="text-custom-red display-6 fw-bold">9</div>
+                                <div class="text-white">Поражений</div>
+                            </div>
+                            <div class="col-6 mb-4 d-flex flex-column justify-content-center">
+                                <div class="text-custom-red display-6 fw-bold">3</div>
+                                <div class="text-white">Ничьих</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Table Section -->
+    <section class="py-5 bg-custom-black">
+        <div class="container">
+            <h2 class="section-title text-white">Последние матчи</h2>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Турнир</th>
+                            <th>Противник</th>
+                            <th>Карта</th>
+                            <th>Счёт</th>
+                            <th>Результат</th>
+                            <th>Статистика</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Match 1 -->
+                        <tr>
+                            <td>10.10.2025</td>
+                            <td>PGL Bucharest 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/NAVI.png" alt="NaVi" width="24" height="24" class="me-2">
+                                    Natus Vincere
+                                </div>
+                            </td>
+                            <td>Ancient</td>
+                            <td>13:11</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 2 -->
+                        <tr>
+                            <td>08.10.2025</td>
+                            <td>PGL Bucharest 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/VirtusPro.png" alt="VP" width="24" height="24" class="me-2">
+                                    Virtus.pro
+                                </div>
+                            </td>
+                            <td>Mirage</td>
+                            <td>11:13</td>
+                            <td><span class="badge bg-danger">Поражение</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 3 -->
+                        <tr>
+                            <td>05.10.2025</td>
+                            <td>PGL Bucharest 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/FazeClan1.png" alt="FaZe" width="24" height="24" class="me-2">
+                                    FaZe Clan
+                                </div>
+                            </td>
+                            <td>Inferno</td>
+                            <td>13:9</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 4 -->
+                        <tr>
+                            <td>02.10.2025</td>
+                            <td>PGL Bucharest 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/G2.png" alt="G2" width="24" height="24" class="me-2">
+                                    G2 Esports
+                                </div>
+                            </td>
+                            <td>Nuke</td>
+                            <td>13:16</td>
+                            <td><span class="badge bg-danger">Поражение</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 5 -->
+                        <tr>
+                            <td>28.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/NIP.png" alt="NIP" width="24" height="24" class="me-2">
+                                    Ninjas in Pyjamas
+                                </div>
+                            </td>
+                            <td>Ancient</td>
+                            <td>13:5</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 6 -->
+                        <tr>
+                            <td>25.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/TeamLiquid2.png" alt="Liquid" width="24" height="24" class="me-2">
+                                    Team Liquid
+                                </div>
+                            </td>
+                            <td>Overpass</td>
+                            <td>13:10</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 7 -->
+                        <tr>
+                            <td>22.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Fnatic.png" alt="Fnatic" width="24" height="24" class="me-2">
+                                    Fnatic
+                                </div>
+                            </td>
+                            <td>Mirage</td>
+                            <td>13:7</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 8 -->
+                        <tr>
+                            <td>18.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/MOUZ.png" alt="MOUZ" width="24" height="24" class="me-2">
+                                    MOUZ
+                                </div>
+                            </td>
+                            <td>Inferno</td>
+                            <td>9:13</td>
+                            <td><span class="badge bg-danger">Поражение</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 9 -->
+                        <tr>
+                            <td>15.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Cloud9.png" alt="Cloud9" width="24" height="24" class="me-2">
+                                    Cloud9
+                                </div>
+                            </td>
+                            <td>Nuke</td>
+                            <td>13:11</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                        
+                        <!-- Match 10 -->
+                        <tr>
+                            <td>12.09.2025</td>
+                            <td>FISSURE PLAYGROUND 2025</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Astralis.png" alt="Astralis" width="24" height="24" class="me-2">
+                                    Astralis
+                                </div>
+                            </td>
+                            <td>Ancient</td>
+                            <td>13:4</td>
+                            <td><span class="badge bg-success">Победа</span></td>
+                            <td><button class="btn btn-sm btn-outline-custom-red">Детали</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Performance Section -->
+    <section class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Последние выступления</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-custom-black text-center p-4">
+                        <div class="achievement-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h4 class="text-white">Текущая серия</h4>
+                        <div class="text-custom-red display-4 fw-bold">4</div>
+                        <p class="text-white">побед подряд</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-custom-black text-center p-4">
+                        <div class="achievement-icon">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+                        <h4 class="text-white">Лучшая карта</h4>
+                        <div class="text-custom-red display-4 fw-bold">73%</div>
+                        <p class="text-white">Ancient</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-custom-black text-center p-4">
+                        <div class="achievement-icon">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                        <h4 class="text-white">Рейтинг HLTV</h4>
+                        <div class="text-custom-red display-4 fw-bold">#9</div>
+                        <p class="text-white">+2 за месяц</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-custom-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="text-custom-red mb-3">MakeSomeNoize</h4>
+                    <p class="text-white">Профессиональная киберспортивная организация по Counter-Strike 2</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-3">
+                        <a href="https://www.twitch.tv/dzozius" class="social-icon" target="_blank"><i class="bi bi-twitch"></i></a>
+                        <a href="https://t.me/misterssniskers" class="social-icon" target="_blank"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Dzozius" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://discord.com/channels/1433221011465179230/1433221013272793170" class="social-icon" target="_blank"><i class="bi bi-discord"></i></a>
+                        <a href="https://www.instagram.com/igornuyanzin_?igsh=dmg5NGdjZjd2b3Y4&utm_source=qr" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p class="text-white mb-0">&copy; 2025 MakeSomeNoize. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Обработка кнопок "Детали"
+        document.querySelectorAll('.btn-outline-custom-red').forEach(button => {
+            button.addEventListener('click', function() {
+                const row = this.closest('tr');
+                const date = row.cells[0].textContent;
+                const opponent = row.cells[2].textContent.trim();
+                alert(`Статистика матча против ${opponent} (${date})\nДетальная статистика будет доступна в ближайшее время!`);
+            });
+        });
+    </script>
+</body>
+</html>

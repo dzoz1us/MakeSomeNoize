@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - MakeSomeNoize</title>
+    <meta name="description" content="Свяжитесь с киберспортивной командой MakeSomeNoize">
+    <link rel="icon" href="assets/MSN1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-custom-red" href="makesomenoize.html">MakeSomeNoize</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="makesomenoize.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">Результаты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title text-custom-red">Контакты</h1>
+                    <p class="lead">Свяжитесь с нами для сотрудничества и вопросов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Свяжитесь с нами</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card contact-card text-center p-4">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <h4 class="text-white">Email</h4>
+                        <p class="text-white">Для деловых предложений</p>
+                        <a href="mailto:business@makesomenoize.com" class="text-custom-red">business@makesomenoize.com</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card contact-card text-center p-4">
+                        <div class="contact-icon">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <h4 class="text-white">Менеджер</h4>
+                        <p class="text-white">Алексей Петров</p>
+                        <a href="mailto:manager@makesomenoize.com" class="text-custom-red">manager@makesomenoize.com</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card contact-card text-center p-4">
+                        <div class="contact-icon">
+                            <i class="bi bi-discord"></i>
+                        </div>
+                        <h4 class="text-white">Discord</h4>
+                        <p class="text-white">Присоединяйтесь к сообществу</p>
+                        <span class="text-custom-red">MakeSomeNoize#official</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card contact-card text-center p-4">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <h4 class="text-white">Телефон</h4>
+                        <p class="text-white">Для срочных вопросов</p>
+                        <span class="text-custom-red">+7 (999) 123-45-67</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-custom-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-white">Форма обратной связи</h2>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Тема</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Выберите тему</option>
+                                    <option value="sponsorship">Спонсорство</option>
+                                    <option value="collaboration">Сотрудничество</option>
+                                    <option value="media">Медиа-запрос</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-custom-red btn-hero">Отправить сообщение</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white text-center">Мы в социальных сетях</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <p class="lead mb-4">Подписывайтесь на наши социальные сети чтобы быть в курсе всех событий</p>
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <a href="https://www.twitch.tv/dzozius" class="social-icon p-3" target="_blank">
+                                <i class="bi bi-twitch"></i>
+                                <div class="mt-2">Twitch</div>
+                            </a>
+                            <a href="https://t.me/misterssniskers" class="social-icon p-3" target="_blank">
+                                <i class="bi bi-telegram"></i>
+                                <div class="mt-2">Telegram</div>
+                            </a>
+                            <a href="https://www.youtube.com/@Dzozius" class="social-icon p-3" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                                <div class="mt-2">YouTube</div>
+                            </a>
+                            <a href="https://discord.com/channels/1433221011465179230/1433221013272793170" class="social-icon p-3" target="_blank">
+                                <i class="bi bi-discord"></i>
+                                <div class="mt-2">Discord</div>
+                            </a>
+                            <a href="https://www.instagram.com/igornuyanzin_?igsh=dmg5NGdjZjd2b3Y4&utm_source=qr" class="social-icon p-3" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <div class="mt-2">Instagram</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-custom-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="text-custom-red mb-3">MakeSomeNoize</h4>
+                    <p class="text-white">Профессиональная киберспортивная организация по Counter-Strike 2</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-3">
+                        <a href="https://www.twitch.tv/dzozius" class="social-icon" target="_blank"><i class="bi bi-twitch"></i></a>
+                        <a href="https://t.me/misterssniskers" class="social-icon" target="_blank"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Dzozius" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://discord.com/channels/1433221011465179230/1433221013272793170" class="social-icon" target="_blank"><i class="bi bi-discord"></i></a>
+                        <a href="https://www.instagram.com/igornuyanzin_?igsh=dmg5NGdjZjd2b3Y4&utm_source=qr" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p class="text-white mb-0">&copy; 2025 MakeSomeNoize. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Обработка формы
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeSomeNoize - Киберспортивная команда по CS2</title>
+    <meta name="description" content="Официальный сайт киберспортивной команды MakeSomeNoize по Counter-Strike 2">
+    <link rel="icon" href="assets/MSN1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-custom-red" href="makesomenoize.html">MakeSomeNoize</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="makesomenoize.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">Результаты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section с видео -->
+    <section class="hero-section-main">
+        <!-- Видео фон -->
+        <div class="video-container">
+            <video class="video-background" autoplay muted loop playsinline>
+                <source src="assets/videocs2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        
+        <!-- Затемнение поверх видео -->
+        <div class="video-overlay"></div>
+        
+        <!-- Контент поверх видео -->
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title-main text-custom-red">MakeSomeNoize</h1>
+                        <p class="hero-subtitle">Профессиональная киберспортивная команда по Counter-Strike 2</p>
+                        <p class="lead mb-4">Мы создаём шум на мировой киберспортивной арене</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="#team" class="btn btn-custom-red btn-hero">Состав команды</a>
+                            <a href="#matches" class="btn btn-outline-light btn-hero">Ближайшие матчи</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Team Section -->
+    <section id="team" class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Состав команды</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="players-scroll-container">
+                        <div class="players-scroll">
+                            <!-- Player 1 -->
+                            <div class="player-card-wrapper">
+                                <div class="card team-card h-95">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <img src="assets/dzoz1us.jpg" alt="dzoz1us" class="rounded-circle" width="120" height="120">
+                                        </div>
+                                        <h4 class="card-title text-white">dzoz1us</h4>
+                                        <p class="player-role">Капитан / Rifler</p>
+                                        <p class="player-stats">K/D: 1.25 | Rating: 1.15</p>
+                                        <p class="card-text">Опытный игрок с отличными лидерскими качествами. Специализируется на тактическом руководстве и средних дистанциях.</p>
+                                        <div class="mt-3">
+                                            <span class="badge bg-dark me-1">AWP</span>
+                                            <span class="badge bg-dark me-1">Rifler</span>
+                                            <span class="badge bg-dark">IGL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Player 2 -->
+                            <div class="player-card-wrapper">
+                                <div class="card team-card h-100">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <img src="assets/suza.jpg" alt="suza" class="rounded-circle" width="120" height="120">
+                                        </div>
+                                        <h4 class="card-title text-white">suza</h4>
+                                        <p class="player-role">AWP / Sniper</p>
+                                        <p class="player-stats">K/D: 1.35 | Rating: 1.28</p>
+                                        <p class="card-text">Снайпер команды с невероятной реакцией. Известен своими клипами с невероятными выстрелами через всю карту.</p>
+                                        <div class="mt-3">
+                                            <span class="badge bg-dark me-1">AWP</span>
+                                            <span class="badge bg-dark me-1">Sniper</span>
+                                            <span class="badge bg-dark">Clutcher</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Player 3 -->
+                            <div class="player-card-wrapper">
+                                <div class="card team-card h-100">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <img src="assets/danechka.jpg" alt="danechka" class="rounded-circle" width="120" height="120">
+                                        </div>
+                                        <h4 class="card-title text-white">danechka</h4>
+                                        <p class="player-role">Entry Fragger</p>
+                                        <p class="player-stats">K/D: 1.18 | Rating: 1.12</p>
+                                        <p class="card-text">Открыватель раундов с агрессивным стилем игры. Создает пространство для команды своими первыми выборами.</p>
+                                        <div class="mt-3">
+                                            <span class="badge bg-dark me-1">Entry</span>
+                                            <span class="badge bg-dark me-1">Rifler</span>
+                                            <span class="badge bg-dark">Aggressive</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Player 4 -->
+                            <div class="player-card-wrapper">
+                                <div class="card team-card h-100">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <img src="assets/andersen.jpg" alt="andersen" class="rounded-circle" width="120" height="120">
+                                        </div>
+                                        <h4 class="card-title text-white">andersen</h4>
+                                        <p class="player-role">Support / Lurker</p>
+                                        <p class="player-stats">K/D: 1.08 | Rating: 1.05</p>
+                                        <p class="card-text">Тактический игрок поддержки. Специализируется на фланговых манёврах и создании неожиданных ситуаций для противника.</p>
+                                        <div class="mt-3">
+                                            <span class="badge bg-dark me-1">Support</span>
+                                            <span class="badge bg-dark me-1">Lurker</span>
+                                            <span class="badge bg-dark">Tactical</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Player 5 -->
+                            <div class="player-card-wrapper">
+                                <div class="card team-card h-100">
+                                    <div class="card-body text-center p-4">
+                                        <div class="mb-3">
+                                            <img src="assets/auq2.jpg" alt="auq" class="rounded-circle" width="120" height="120">
+                                        </div>
+                                        <h4 class="card-title text-white">auq</h4>
+                                        <p class="player-role">Rifler / Clutcher</p>
+                                        <p class="player-stats">K/D: 1.22 | Rating: 1.18</p>
+                                        <p class="card-text">Универсальный игрок с холодной головой в ключевые моменты. Известен своими невероятными сейвами в ситуациях 1хХ.</p>
+                                        <div class="mt-3">
+                                            <span class="badge bg-dark me-1">Rifler</span>
+                                            <span class="badge bg-dark me-1">Clutcher</span>
+                                            <span class="badge bg-dark">Versatile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches" class="py-5 bg-custom-black">
+        <div class="container">
+            <h2 class="section-title text-white">Ближайшие матчи</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <!-- Match 1 -->
+                    <div class="card match-card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <span class="badge tournament-badge mb-2">IEM Chengdu</span>
+                                    <div class="text-white">03.11.2025 | 19:00</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">MakeSomeNoize</div>
+                                            <img src="assets/MSN2.png" alt="MSN" class="img-fluid my-2" width="50">
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge bg-dark fs-6">VS</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">Na'Vi</div>
+                                            <img src="assets/NAVI.png" alt="Na'Vi" class="img-fluid my-2" width="60">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <button class="btn btn-custom-red">Смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Match 2 -->
+                    <div class="card match-card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <span class="badge tournament-badge mb-2">BLAST Rivals Season 2</span>
+                                    <div class="text-white">12.11.2025 | 20:30</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">MakeSomeNoize</div>
+                                            <img src="assets/MSN2.png" alt="MSN" class="img-fluid my-2" width="50">
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge bg-dark fs-6">VS</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">Virtus.pro</div>
+                                            <img src="assets/VirtusPro.png" alt="VP" class="img-fluid my-2" width="60">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <button class="btn btn-custom-red">Смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Match 3 -->
+                    <div class="card match-card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <span class="badge tournament-badge mb-2">StarLadder Budapest Major</span>
+                                    <div class="text-white">24.11.2025 | 18:00</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">MakeSomeNoize</div>
+                                            <img src="assets/MSN2.png" alt="MSN" class="img-fluid my-2" width="50">
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge bg-dark fs-6">VS</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="fw-bold text-white">FaZe Clan</div>
+                                            <img src="assets/FazeClan1.png" alt="FaZe" class="img-fluid my-2" width="60">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <button class="btn btn-custom-red">Смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="stream-embed">
+                        <h4 class="text-white mb-3">Трансляция</h4>
+                        <div class="bg-dark rounded d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                                <i class="bi bi-play-circle-fill text-custom-red display-4"></i>
+                                <p class="mt-2">Трансляция начнется скоро</p>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <h5>Статистика команды</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">Рейтинг: №9 (HLTV)</li>
+                                <li class="mb-2">Победы: 71%</li>
+                                <li class="mb-2">Карта-талисман: Ancient</li>
+                                <li>Средний K/D: 1.22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5 bg-custom-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Достижения</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <h4>2-3 место</h4>
+                        <p class="text-white">Intel Extreme Masters Katowice 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <h4>Stage 2</h4>
+                        <p class="text-white">BLAST.tv Major: Austin 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>1 место</h4>
+                        <p class="text-white">Thunderpick World Championship 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h4>5-8 место</h4>
+                        <p class="text-white">FISSURE PLAYGROUND 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-custom-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="text-custom-red mb-3">MakeSomeNoize</h4>
+                    <p class="text-white">Профессиональная киберспортивная организация по Counter-Strike 2</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-3">
+                        <a href="https://www.twitch.tv/dzozius" class="social-icon" target="_blank"><i class="bi bi-twitch"></i></a>
+                        <a href="https://t.me/misterssniskers" class="social-icon" target="_blank"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Dzozius" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://discord.com/channels/1433221011465179230/1433221013272793170" class="social-icon" target="_blank"><i class="bi bi-discord"></i></a>
+                        <a href="https://www.instagram.com/igornuyanzin_?igsh=dmg5NGdjZjd2b3Y4&utm_source=qr" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p class="text-white mb-0">&copy; 2025 MakeSomeNoize. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Простая обработка кнопок "Смотреть"
+        document.querySelectorAll('.btn-custom-red').forEach(button => {
+            if (button.textContent === 'Смотреть') {
+                button.addEventListener('click', function() {
+                    alert('Трансляция будет доступна за 15 минут до начала матча!');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
